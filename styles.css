@@ -48,6 +48,7 @@ a {
     color: blue;
   
 }
+
 .icon {
     display: none;
 }
@@ -61,8 +62,8 @@ a {
 }
 
 .item-content {   
-    display: none;
-    width: 40%;
+    display: block;
+    width: 0;
     margin-left: auto;
     margin-right: auto;    
 }
@@ -70,9 +71,11 @@ a {
 .item:hover .item-content {
     display: block;
 }
+
 .item:focus .item-content {
     display: block;
 }
+
 .wrapper:hover .item-title p {
     color:rgb(98, 36, 9);
 }
@@ -93,8 +96,13 @@ a {
     color: blue;
 }
 
-
-
 .item:active .item-content {
     opacity: 0.4;
 }
+
+.item:hover .item-content, .item:focus .item-content {
+    width: 40%;
+    transform: scale(1.0);
+    transition: all 0.3s ease-out;
+}
+
