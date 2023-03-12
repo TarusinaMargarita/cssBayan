@@ -9,8 +9,7 @@ body {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    gap: 0.5em;
-    
+    gap: 0.5em;   
     font-size: 1.5em;
     font-family: "Comic Sans Ms", sans-serif;
     background-color: rgb(115, 184, 209); 
@@ -86,6 +85,8 @@ a {
 
 .item:focus .icon, .item:hover .icon {
     transform: rotate(45deg);
+    transition: all 0.4s ease-out;
+
 }
 
 .item:focus .item-title p {
@@ -101,8 +102,56 @@ a {
 }
 
 .item:hover .item-content, .item:focus .item-content {
-    width: 40%;
+    width: 50%;
     transform: scale(1.0);
-    transition: all 0.3s ease-out;
+    transition: all 0.4s ease-out;
 }
+
+@media (min-width: 320px) and (max-width : 819px) {  
+    .wrapper {
+        width: 95%;
+        gap: 2vh;   
+        font-size: 3vh;
+    }
+    .header h1 {
+        width: 92%;
+        font-size: 5vh;
+    } 
+    .item-title {
+        width: 92%;
+    }
+}
+
+@media (min-width: 820px) and (max-width : 1199px) { 
+    .wrapper {
+        width: 90%;
+        gap: 1em;   
+        font-size: 2em;
+    }
+    .header h1 {
+        width: 90%;
+        font-size: 2em;
+    } 
+    .item-title {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1200px) {  
+    
+    .wrapper {
+        width: 70%;
+        gap: 1em;   
+        font-size: 1.5 em;
+    }
+
+    .header h1 {
+        width: 80%;
+        font-size: 1.5 em;
+    } 
+    .item-title {
+          width: 80%;
+    }
+}
+
 
