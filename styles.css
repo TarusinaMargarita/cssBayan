@@ -1,25 +1,66 @@
 body {
-    background-color: grey;
-    
+    background-color: grey;   
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1200 px;
-    min-height: 100vh;
-    background-color: rgb(40, 165, 210);
-    color:rgb(98, 36, 9);
-    font-family: "Comic Sans Ms", sans-serif;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0.5em;
     
-        
+    font-size: 1.5em;
+    font-family: "Comic Sans Ms", sans-serif;
+    background-color: rgb(115, 184, 209); 
+    cursor: pointer;    
 }
 
 .item {
-    border-top: 2px solid rgb(122, 118, 118);
-    max-width: 900 px;
+    width: 100%;
+}
+.header{
+        width: 100%;
+        color:rgb(98, 36, 9);
+}
+.item-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid rgb(158, 149, 149);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+a {
+    text-decoration: none;
+    
 }
 
+.item-title p {
+    margin: 0; 
+    color: blue;
+  
+}
+.icon {
+    display: none;
+}
 
+.header h1 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.item-content {   
+    display: none;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;    
+}
 
