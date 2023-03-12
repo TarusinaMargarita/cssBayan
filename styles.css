@@ -1,0 +1,157 @@
+body {
+    background-color: grey;   
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0.5em;   
+    font-size: 1.5em;
+    font-family: "Comic Sans Ms", sans-serif;
+    background-color: rgb(115, 184, 209); 
+    cursor: pointer;    
+}
+
+.item {
+    width: 100%;
+}
+
+.header{
+        width: 100%;
+        color:rgb(98, 36, 9);
+}
+
+.item-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid rgb(158, 149, 149);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.item-title p {
+    margin: 0; 
+    color: blue;
+  
+}
+
+.icon {
+    display: none;
+}
+
+.header h1 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.item-content {   
+    display: block;
+    width: 0;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.item:hover .item-content {
+    display: block;
+}
+
+.item:focus .item-content {
+    display: block;
+}
+
+.wrapper:hover .item-title p {
+    color:rgb(98, 36, 9);
+}
+
+.wrapper:hover .icon {
+    display: block;
+}
+
+.item:focus .icon, .item:hover .icon {
+    transform: rotate(45deg);
+    transition: all 0.4s ease-out;
+
+}
+
+.item:focus .item-title p {
+    color:rgb(98, 36, 9);
+}
+
+.item:active .item-title p {
+    color: blue;
+}
+
+.item:active .item-content {
+    opacity: 0.4;
+}
+
+.item:hover .item-content, .item:focus .item-content {
+    width: 50%;
+    transform: scale(1.0);
+    transition: all 0.4s ease-out;
+}
+
+@media (min-width: 320px) and (max-width : 819px) {  
+    .wrapper {
+        width: 95%;
+        gap: 2vh;   
+        font-size: 3vh;
+    }
+    .header h1 {
+        width: 92%;
+        font-size: 5vh;
+    } 
+    .item-title {
+        width: 92%;
+    }
+}
+
+@media (min-width: 820px) and (max-width : 1199px) { 
+    .wrapper {
+        width: 90%;
+        gap: 1em;   
+        font-size: 2em;
+    }
+    .header h1 {
+        width: 90%;
+        font-size: 2em;
+    } 
+    .item-title {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1200px) {  
+    
+    .wrapper {
+        width: 70%;
+        gap: 1em;   
+        font-size: 1.5 em;
+    }
+
+    .header h1 {
+        width: 80%;
+        font-size: 1.5 em;
+    } 
+    .item-title {
+          width: 80%;
+    }
+}
+
+
