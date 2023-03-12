@@ -20,10 +20,12 @@ body {
 .item {
     width: 100%;
 }
+
 .header{
         width: 100%;
         color:rgb(98, 36, 9);
 }
+
 .item-title {
     display: flex;
     flex-direction: row;
@@ -35,6 +37,7 @@ body {
     margin-right: auto;
     
 }
+
 a {
     text-decoration: none;
     
@@ -64,3 +67,34 @@ a {
     margin-right: auto;    
 }
 
+.item:hover .item-content {
+    display: block;
+}
+.item:focus .item-content {
+    display: block;
+}
+.wrapper:hover .item-title p {
+    color:rgb(98, 36, 9);
+}
+
+.wrapper:hover .icon {
+    display: block;
+}
+
+.item:focus .icon, .item:hover .icon {
+    transform: rotate(45deg);
+}
+
+.item:focus .item-title p {
+    color:rgb(98, 36, 9);
+}
+
+.item:active .item-title p {
+    color: blue;
+}
+
+
+
+.item:active .item-content {
+    opacity: 0.4;
+}
